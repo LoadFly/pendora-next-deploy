@@ -1,6 +1,1 @@
-vendor
-.idea/
-cmd/api/api
-logs/
-app.TOML
-.vscode/
+sessions/session_*
