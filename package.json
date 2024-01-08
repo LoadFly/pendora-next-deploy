@@ -6,7 +6,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "./entrypoint.sh",
+    "build": "api/start.sh",
     "prepublishOnly": "npm run build"
   }
 }

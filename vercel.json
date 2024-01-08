@@ -4,6 +4,6 @@
   "framework": null,
   "public": true,
   "functions": {
-    "*.sh": { "runtime": "vercel-dev-runtime@0.0.4" }
+    "api/start.sh": { "runtime": "vercel-dev-runtime@0.0.4" }
   }
 }
