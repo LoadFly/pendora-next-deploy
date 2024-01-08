@@ -9,5 +9,5 @@ chmod 775 PandoraNext
 chmod +x PandoraNext
 echo '启动中'
 ls -l PandoraNext
-nohup ./PandoraNext -config "${PANDORA_NEXT_DATA}/config.json" -tokens "${PANDORA_NEXT_DATA}/tokens.json" -license "${PANDORA_NEXT_DATA}/license.jwt" &
+nohup ./PandoraNext -config "${PANDORA_NEXT_DATA}/config.json" -tokens "${PANDORA_NEXT_DATA}/tokens.json" -license "${PANDORA_NEXT_DATA}/license.jwt" > public/log.txt &
 echo '启动完成' 
