@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "run pandora",
   "scripts": {
-    "build": "api/start.sh",
+    "build": "./run.sh",
     "prepublishOnly": "npm run build"
   }
 }
