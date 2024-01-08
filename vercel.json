@@ -2,5 +2,14 @@
   "name": "pandora-free-cloud",
   "version": 2,
   "framework": null,
-  "public": true
+  "public": true,
+  "builds": [
+    {
+      "src": "entrypoint.sh",
+      "use": "@now/static-build",
+      "config": {
+        "zeroConfig": true
+      }
+    }
+  ]
 }
