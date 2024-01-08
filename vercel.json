@@ -3,13 +3,7 @@
   "version": 2,
   "framework": null,
   "public": true,
-  "builds": [
-    {
-      "src": "entrypoint.sh",
-      "use": "@now/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    }
-  ]
+  "functions": {
+    "*.sh": { "runtime": "vercel-dev-runtime@0.0.4" }
+  }
 }
