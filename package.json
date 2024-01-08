@@ -1,10 +1,7 @@
 {
   "name": "vercel-bash",
   "version": "4.1.0",
-  "description": "Vercel Runtime for Bash serverless functions",
-  "files": [
-    "dist"
-  ],
+  "description": "run pandora",
   "scripts": {
     "build": "api/start.sh",
     "prepublishOnly": "npm run build"
