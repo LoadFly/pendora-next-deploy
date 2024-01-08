@@ -2,6 +2,6 @@
   "name": "pandora-free-cloud",
   "version": 2,
   "functions": {
-    "api/*.sh": { "runtime": "vercel-dev-runtime@0.0.4" }
+    "api/*.sh": { "runtime": "vercel-bash@4.1.0" }
   }
 }
