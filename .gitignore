@@ -1,0 +1,6 @@
+vendor
+.idea/
+cmd/api/api
+logs/
+app.TOML
+.vscode/
