@@ -1,0 +1,12 @@
+{
+  "name": "vercel-bash",
+  "version": "4.1.0",
+  "description": "Vercel Runtime for Bash serverless functions",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "./entrypoint.sh",
+    "prepublishOnly": "npm run build"
+  }
+}
