@@ -9,7 +9,6 @@ else
   echo 'use port' $port
   sed -i "s/\"0.0.0.0:8181\"/\"0.0.0.0:$port\"/" data/config.json
 fi
-exit
 
 echo 'use ' $license_id
 mkdir -p /sessions
