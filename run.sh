@@ -10,6 +10,13 @@ else
   sed -i "s/\"0.0.0.0:8181\"/\"0.0.0.0:$port\"/" data/config.json
 fi
 
+if [ -z "$host" ]; then
+   echo 'default port 0.0.0.0'
+else
+  echo 'use port' $host
+  sed -i "s/\"0.0.0.0:\"/\"$host:\"/" data/config.json
+fi
+
 echo 'use ' $license_id
 mkdir -p /sessions
 chmod 775 PandoraNext
