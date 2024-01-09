@@ -1,9 +1,17 @@
 #!/bin/sh
 
 PANDORA_NEXT_DATA="data"
-## 环境变量的值  
+## 环境变量的值
 sed -i "s/\"license_id\": \".*\"/\"license_id\": \"$license_id\"/" data/config.json
-echo $license_id
+if [ -z "$port" ]; then
+   echo 'default port 8181'
+else
+  echo 'use port' $port
+  sed -i "s/\"0.0.0.0:8181\"/\"0.0.0.0:$port\"/" data/config.json
+fi
+exit
+
+echo 'use ' $license_id
 mkdir -p /sessions
 chmod 775 PandoraNext
 chmod +x PandoraNext
